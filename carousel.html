@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Our Second Carousel</title>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--we are going to link the bootstrap.css file to style our webpage and the js files to add more functionality to it eg sliding and button collapse-->
+</head>
+<body>
+  <!--This is where you place the content that is to be displayed on the web browser.A div basically refined to a section or a division and is often at times used when you want to style several elements in the same way-->
+  <div class="container">
+  	<div id="ney" class="carousel slide" data-ride="carousel">
+  		<!--data ride means that the moment you launch your web the carousel should take effect/start-->
+  		<!--we are going to use ol to indicate which position an image occupies and if it slides its new position -->
+  		<ol class="carousel-indicators">
+  			<li data-target="#ney" data-slide-to="0" class="active">Chrome</li>
+  			<li data-target="#ney" data-slide-to="1">Explorer</li>
+  			<li data-target="#ney" data-slide-to="2">Mozilla</li>
+  			<li data-target="#ney" data-slide-to="3">Yahoo</li>
+  		</ol>
+  		<div class="carousel-inner">
+  			<div class="item active">
+  				<img src="pexels-photo-450441.jpeg" width="100%" height="400px">
+  			</div>
+  			<div class="item">
+  				<img src="pexels-photo-464332.jpeg" width="100%" height="400px">
+  			</div>
+  			<div class="item">
+  				<img src="pexels-photo-871053.jpeg" width="100%" height="400px">
+  			</div>
+  		</div>
+  		<!--we then add glyphicons which will be used to indicate direct(mini icons)-->
+  		<a href="#ney" class="left carousel-control" data-slide="prev">
+  			<span class="glyphicon glyphicon-chevron-left"></span>
+  			<span class="sr-only"></span>
+  		</a>
+  		<a href="#ney" class="right carousel-control" data-slide="next">
+  			<span class="glyphicon glyphicon-chevron-right"></span>
+  			<span class="sr-only"></span>
+  		</a>
+  	</div>
+  	<div class="row">
+  		<div class="col-sm-8">
+  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  			cillum dolore eu fugiat nulla pariatur.</p>
+  		</div>
+  		  <div class="col-sm-4">
+  		  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  		  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  		  	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  		  	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  		  	cillum dolore eu fugiat nulla pariatur.</p>
+  		  </div>
+  		</div>
+  		  <br><br>
+  		  <!--after giving our button a class,we now want to give it a collapse effect such that when clicked it displays content-->
+  		<button data-toggle="collapse" data-target="#demo">Submit</button>
+
+<div id="demo" class="collapse">
+Lorem ipsum dolor text....
+</div>
+   </div>
+</body>
+</html>
